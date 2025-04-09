@@ -11,9 +11,7 @@ palindrome_map = {
         "No lemon no melon",
         "Eva can I see bees in a cave",
     ],
-    "numbers": [121, 1331, 12321, 11, 0
-    ],
-    "letters":["a", "A", "b", "B", "c", "C", "d", "D", "e", "E", "f", "F", "g", "G", "h", "H", "i", "I", "j","J", "k", "K", "l", "L", "m", "M", "n", "N", "ñ", "Ñ", "o", "O", "p", "P", "q", "Q", "r", "R", "s", "S", "t", "T", "u", "U", "x", "X", "y", "Y", "z", "Z"]
+    "numbers": [121, 1331, 12321, 11, 0],
 }
 
 not_palindrome_map = {
@@ -32,7 +30,7 @@ for word in palindrome_map["words"]:
     print(f"¿'{word}' es un palindromo {is_palindrome(word)}")
 
 print("\n=== verificacion de no palindromos===")
-for word in not palindrome_map["words"]:
+for word in not_palindrome_map["words"]:
     print(f"¿'{word}' es palíndromo? {is_palindrome(word)}")
 # Test avanzado (frases)
 print("\n=== Frases palindrómicas ===")
