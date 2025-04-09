@@ -20,22 +20,6 @@ not_palindrome_map = {
     "numbers": [123, 4567, 89],
 }
 
-# Función para verificar si un string es palíndromo
-def is_palindrome(s):
-    if isinstance(s, int):  # Si es número, lo convertimos a string
-        s = str(s)
-    s = ''.join(c for c in s if c.isalnum()).lower()  # Elimina espacios y signos
-    return s == s[::-1]
-
-# Ejemplos de uso
-print("=== Verificación de palíndromos ===")
-for word in palindrome_map["words"]:
-    print(f"¿'{word}' es palíndromo? {is_palindrome(word)}")
-
-print("\n=== Verificación de NO palíndromos ===")
-for word in not_palindrome_map["words"]:
-    print(f"¿'{word}' es palíndromo? {is_palindrome(word)}")
-
 # Test avanzado (frases)
 print("\n=== Frases palindrómicas ===")
 print(is_palindrome("A man, a plan, a canal: Panama"))  # True
